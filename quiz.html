@@ -1,0 +1,573 @@
+<html>
+<head>
+<title>SQL Quiz</title>
+<link rel="stylesheet" type="text/css" href="Quiz.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="Quiz.js"></script>
+</head>
+<body>
+  <h2 class="quizHeader">Take an SQL Quiz!</h2>
+  
+	<table style="width:1200px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn1">1.  What does SQL stand for?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1"> Structured Query Language</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Structured Question Language</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label> Strong Question Language</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label> Simple Question Language</label>
+    		</ul>
+	  	</div>
+                     <script>
+                       var Question = document.getElementById('jsn1').innerHTML;
+                       var Answer = document.getElementById('correctString1').innerHTML
+ var JsonData='['+ JSON.stringify({"question ":  Question, "answer": Answer });
+  
+                     </script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn2">2.Which of the following is not true about the COALESCE function?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>It takes multiple alternate values.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">It returns the first value in the parameter list if it is null.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>It returns the first non-null expression in the parameter list.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>None of the above</label>
+	    	</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn2').innerHTML;
+                       var Answer = document.getElementById('correctString2').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn3">3.Which of the following is not true about the ON clause?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>ON clause specifies conditions or specify columns to join.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3"> ON clause does not allow three way joins.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>ON clause makes the query easy to understand.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label> None of the above.</label>
+	    	</ul>
+		</div>
+<script>
+                     var Question = document.getElementById('jsn3').innerHTML;
+                       var Answer = document.getElementById('correctString3').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });   
+</script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn4">4. Which of the following is not true about multiple-row subqueries?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Multiple row subqueries return multiple rows from the outer SELECT statement.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">Multiple row subqueries return multiple rows from the inner SELECT statement.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Multiple row subqueries use multiple-row comparison operators.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>All of the above.</label>
+    		</ul>
+	  	</div>
+<script>
+                     var Question = document.getElementById('jsn4').innerHTML;
+                       var Answer = document.getElementById('correctString4').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+  
+</script>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn5">5.Which SQL statement is used to extract data from a database?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString5">SELECT</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>EXTRACT</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>OPEN</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>GET</label>
+    		</ul>
+	  	</div>
+                     <script>
+                     var Question = document.getElementById('jsn5').innerHTML;
+                       var Answer = document.getElementById('correctString5').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+  
+                     </script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn6">6.Which of the following is not true about use of a database view?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>It provides data independence.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="1">
+	        <label id="correctString6">It prevents different views of same data.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label> It makes queries easy.</label>
+	        <br>
+	        <input class="answer" type="radio" name="q6" value="0">
+	        <label>It restricts data access.</label>
+	    	</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn6').innerHTML;
+                       var Answer = document.getElementById('correctString6').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn7">7.Which SQL statement is used to update data in a database?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>SAVE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="1">
+	        <label id="correctString7">UPDATE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>MODIFY</label>
+	        <br>
+	        <input class="answer" type="radio" name="q7" value="0">
+	        <label>SAVE AS</label>
+	    	</ul>
+		</div>
+<script>
+                    var Question = document.getElementById('jsn7').innerHTML;
+                       var Answer = document.getElementById('correctString7').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+</script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn8">8. Which of the following code will delete a sequence named loc_seq?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>delete sequence loc-seq;</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="1">
+	        <label id="correctString8"> drop sequence loc_seq;</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>delete primary key loc_sec;</label>
+	        <br>
+	        <input class="answer" type="radio" name="q8" value="0">
+	        <label>drop primary key loc_sec;</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+              <script>
+      var Question = document.getElementById('jsn8').innerHTML;
+                       var Answer = document.getElementById('correctString8').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+
+
+</script>
+
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn9">9.Which of the following code would create a role named student_admin?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q9" value="1">
+	        <label id="correctString9">CREATE ROLE student_admin;</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label>GRANT student_admin;</label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label>CREATE student_admin;</label>
+	        <br>
+	        <input class="answer" type="radio" name="q9" value="0">
+	        <label>DELETE student_admin;</label>
+    		</ul>
+	  	</div>
+                     <script>
+                     var Question = document.getElementById('jsn9').innerHTML;
+                       var Answer = document.getElementById('correctString9').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+  
+                     </script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn10">10.Which SQL statement is used to return only different values?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label> SELECT DIFFERENT</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="1">
+	        <label id="correctString10"> SELECT DISTINCT</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label> SELECT UNIQUE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q10" value="0">
+	        <label>None of the above</label>
+	    	</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn10').innerHTML;
+                       var Answer = document.getElementById('correctString10').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer }); 
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn11">11. Choose the incorrect option about the sql server index</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q11" value="0">
+	        <label>Clustered indexes and non-clustered indexes</label>
+	        <br>
+	        <input class="answer" type="radio" name="q11" value="1">
+	        <label id="correctString11">More than one clustered index on a table</label>
+	        <br>
+	        <input class="answer" type="radio" name="q11" value="0">
+	        <label>Both types use B-TREE for searching data</label>
+	        <br>
+	        <input class="answer" type="radio" name="q11" value="0">
+	        <label> Only one clustered index on a table</label>
+	    	</ul>
+		</div>
+<script>
+                       var Question = document.getElementById('jsn11').innerHTML;
+                       var Answer = document.getElementById('correctString11').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer }); 
+</script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn12">12.Which of the following DBCC command is used to see when was the last time the index rebuild?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>DBCC DBREINDEX</label>
+	        <br>
+	        <input class="answer" type="radio" name="q12" value="1">
+	        <label id="correctString12">DBCC SHOW_STATISTICS</label>
+	        <br>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>DBCC SHOWCONFIG</label>
+	        <br>
+	        <input class="answer" type="radio" name="q12" value="0">
+	        <label>None of the above</label>
+    		</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn12').innerHTML;
+                       var Answer = document.getElementById('correctString12').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+</script>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn13">13.With SQL, how can you insert a new record into the "Persons" table?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q13" value="1">
+	        <label id="correctString13"> INSERT INTO Persons VALUES ('Jimmy', 'Jackson')</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q13" value="0">
+	        <label> INSERT INTO Persons(Name) VALUES ('Jimmy', 'Jackson')</label>
+	        <br>
+	        <input class="answer" type="radio" name="q13" value="0">
+	        <label>INSERT VALUES ('Jimmy', 'Jackson') INTO Persons</label>
+	        <br>
+	        <input class="answer" type="radio" name="q13" value="0">
+	        <label> INSERT ('Jimmy', 'Jackson') INTO Persons</label>
+    		</ul>
+	  	</div>
+                     <script>
+                     var Question = document.getElementById('jsn13').innerHTML;
+                       var Answer = document.getElementById('correctString13').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+  
+                     </script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn14">14.Which type of integrity preserves the defined relationship between tables when records are entered or deleted?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q14" value="0">
+	        <label> Entity integrity</label>
+	        <br>
+	        <input class="answer" type="radio" name="q14" value="1">
+	        <label id="correctString14">Referential integrity</label>
+	        <br>
+	        <input class="answer" type="radio" name="q14" value="0">
+	        <label>User-defined integrity</label>
+	        <br>
+	        <input class="answer" type="radio" name="q14" value="0">
+	        <label>Domain integrity</label>
+	    	</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn14').innerHTML;
+                       var Answer = document.getElementById('correctString14').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn15">15.Which SQL statement is used to delete data from a database?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q15" value="0">
+	        <label>REMOVE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q15" value="1">
+	        <label id="correctString15">DELETE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q15" value="0">
+	        <label>COLLAPSE</label>
+	        <br>
+	        <input class="answer" type="radio" name="q15" value="0">
+	        <label>REMOVE AS</label>
+	    	</ul>
+		</div>
+<script>
+                       var Question = document.getElementById('jsn15').innerHTML;
+                       var Answer = document.getElementById('correctString15').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });  
+</script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn16">16. How many Primary key constraints can be included in a table definition?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q16" value="0">
+	        <label>Two</label>
+	        <br>
+	        <input class="answer" type="radio" name="q16" value="1">
+	        <label id="correctString16">One</label>
+	        <br>
+	        <input class="answer" type="radio" name="q16" value="0">
+	        <label>Three</label>
+	        <br>
+	        <input class="answer" type="radio" name="q16" value="0">
+	        <label>Many</label>
+    		</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn16').innerHTML;
+                       var Answer = document.getElementById('correctString16').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+  
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn17">17.Which SQL statement is used to insert new data in a database?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q17" value="1">
+	        <label id="correctString17">INSERT INTO</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q17" value="0">
+	        <label>ADD NEW</label>
+	        <br>
+	        <input class="answer" type="radio" name="q17" value="0">
+	        <label>ADD RECORD</label>
+	        <br>
+	        <input class="answer" type="radio" name="q17" value="0">
+	        <label>INSERT NEW</label>
+    		</ul>
+	  	</div>
+                     <script>
+                     var Question = document.getElementById('jsn17').innerHTML;
+                       var Answer = document.getElementById('correctString17').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+  
+  
+                     </script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn18">Which statement is used to delete all rows in a table without having the action logged?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q18" value="0">
+	        <label>Delete table statement</label>
+	        <br>
+	        <input class="answer" type="radio" name="q18" value="1">
+	        <label id="correctString18">Truncate table statement</label>
+	        <br>
+	        <input class="answer" type="radio" name="q18" value="0">
+	        <label>Drop table statement</label>
+	        <br>
+	        <input class="answer" type="radio" name="q18" value="0">
+	        <label>None of the above</label>
+	    	</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn18').innerHTML;
+                       var Answer = document.getElementById('correctString18').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+  
+</script>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn19">19.Tools for importing and exporting data in sql server</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q19" value="0">
+	        <label>bcp command utility</label>
+	        <br>
+	        <input class="answer" type="radio" name="q19" value="0">
+	        <label> DTS</label>
+	        <br>
+	        <input class="answer" type="radio" name="q19" value="0">
+	        <label>Bulk inserts</label>
+	        <br>
+	        <input class="answer" type="radio" name="q19" value="1">
+	        <label id="correctString19">ALL of the above</label>
+	    	</ul>
+		</div>
+<script>
+                       var Question = document.getElementById('jsn19').innerHTML;
+                       var Answer = document.getElementById('correctString19').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer });
+  
+</script>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question" id="jsn20">20. Which SQL keyword is used to sort the result-set?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q20" value="0">
+	        <label>Group by</label>
+	        <br>
+	        <input class="answer" type="radio" name="q20" value="1">
+	        <label id="correctString20">Order by</label>
+	        <br>
+	        <input class="answer" type="radio" name="q20" value="0">
+	        <label>Sort</label>
+	        <br>
+	        <input class="answer" type="radio" name="q20" value="0">
+	        <label>Sort by</label>
+    		</ul>
+	  	</div>
+<script>
+                       var Question = document.getElementById('jsn20').innerHTML;
+                       var Answer = document.getElementById('correctString20').innerHTML
+ var JsonData= JsonData +','+JSON.stringify({"question ":  Question, "answer": Answer })+']';
+  console.log(JsonData);
+</script>
+	  </td>
+	</tr>
+
+
+
+
+
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    
+    <div class="quizAnswers" id="correctAnswer5"></div>
+    <div class="quizAnswers" id="correctAnswer6"></div>
+    <div class="quizAnswers" id="correctAnswer7"></div>
+    <div class="quizAnswers" id="correctAnswer8"></div>
+
+<div class="quizAnswers" id="correctAnswer9"></div>
+    <div class="quizAnswers" id="correctAnswer10"></div>
+    <div class="quizAnswers" id="correctAnswer11"></div>
+    <div class="quizAnswers" id="correctAnswer12"></div>
+
+<div class="quizAnswers" id="correctAnswer13"></div>
+    <div class="quizAnswers" id="correctAnswer14"></div>
+    <div class="quizAnswers" id="correctAnswer15"></div>
+    <div class="quizAnswers" id="correctAnswer16"></div>
+
+<div class="quizAnswers" id="correctAnswer17"></div>
+    <div class="quizAnswers" id="correctAnswer18"></div>
+    <div class="quizAnswers" id="correctAnswer19"></div>
+    <div class="quizAnswers" id="correctAnswer20"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+</body>
+</html>
